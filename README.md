@@ -20,22 +20,47 @@ Using this is simple than anything. Just follow these steps
 
 ## 📕 Examples
 #### Example 1
-```
+```html
 <mark-down src="https://raw.githubusercontent.com/Harry260/bobthebot/main/README.md"></mark-down>
 ```
 
 #### Example 2
-```
-# Lorem Ipsum
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+```html
+<mark-down>
+ # Lorem Ipsum
+ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-[By Harry](https://harrytom.ml/)
+ [By Harry](https://harrytom.ml/)
+</mark-down>
 ```
 
 ## 💪 Made with
 
 - [marked.js](https://github.com/markedjs/marked) for rendering markdown
 - [sindresorhus/github-markdown-css](https://github.com/sindresorhus/github-markdown-css) default styles for rendered markdown
+
+## 🎨 Customization
+
+If you are Using default styles, there is an option to set the color scheme.
+
+```js
+new Marrkit({
+ theme:"dark"
+})
+```
+You can use `"dark"` or `light` or `auto` (default)
+
+### Customizing Markdown
+
+You can customize the markdown using css under the `.markdown-body` class
+eg. Customizing `Heading 1/H1`
+
+```css
+.markdown-body h1{
+   font-size: 20px;
+   color:white;
+}
+```
 
 ##  🙏 Support
 
